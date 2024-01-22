@@ -16,7 +16,7 @@
                   <div style="display: flex; flex-direction: column;gap: 30px;">
                         <input type="text" class="form-control" placeholder="UserName" formControlName="username">
                         <div *ngIf="!loginform.controls.username?.valid&&(loginform.controls.username?.dirty||loginform.controls.username?.touched)">
-                          <pre>Tên đăng nhập không để trống</pre>
+                          <pre>Tên đăng nhập trống ! vui lòng nhập lại</pre>
                         </div>
                         <input type="password" class="form-control" placeholder="Password" formControlName="password">
                         <div *ngIf="!loginform.controls.password?.valid&&(loginform.controls.password?.dirty||loginform.controls.password?.touched)">
