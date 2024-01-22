@@ -1,0 +1,20 @@
+img {
+    max-width: 100%
+}
+
+.product1 {
+    margin-top: 50px;
+    max-height: 700px;
+    max-width: 700px;
+    width: 300px;
+    margin-left: 10px;
+    background-color: honeydew;
+    margin-bottom: 100px;
+}
+
+.price {
+    color: crimson;
+}
+.content{
+    margin-bottom: 550px;
+}
