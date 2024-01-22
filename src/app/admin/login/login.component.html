@@ -1,5 +1,4 @@
 
-
 <section class="vh-100" style="background-color: #9A616D;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -18,6 +17,12 @@
                         <div *ngIf="!loginform.controls.username?.valid&&(loginform.controls.username?.dirty||loginform.controls.username?.touched)">
                           <pre>Tên đăng nhập trống ! vui lòng nhập lại</pre>
                         </div>
+
+                        <input type="text" class="form-control" placeholder="email" formControlName="email">
+                        <div *ngIf="!loginform.controls.email?.valid&&(loginform.controls.email?.dirty||loginform.controls.email?.touched)">
+                          <pre>email trống ! vui lòng nhập lại</pre>
+                        </div>
+
                         <input type="password" class="form-control" placeholder="Password" formControlName="password">
                         <div *ngIf="!loginform.controls.password?.valid&&(loginform.controls.password?.dirty||loginform.controls.password?.touched)">
                           <pre >Mật khẩu không nhỏ hơn 6 kí tự</pre>
